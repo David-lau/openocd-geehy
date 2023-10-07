@@ -126,3 +126,8 @@ proc stm32wlx args { eval stm32l4x $args }
 
 # gd32e23x uses the same flash driver as the stm32f1x
 proc gd32e23x args { eval stm32f1x $args }
+
+# apm32[e1x|f0xx|s1x] uses the same flash driver as the apm32f1x
+proc apm32e1x args { eval apm32f1x $args }
+proc apm32f0xx args { eval apm32f1x $args }
+proc apm32s1x args { eval apm32f1x $args }
