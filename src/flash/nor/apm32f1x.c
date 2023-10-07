@@ -629,7 +629,7 @@ static int apm32x_get_property_addr(struct target *target, struct apm32x_propert
 		return ERROR_TARGET_NOT_EXAMINED;
 	}
 
-	switch (cortex_m_get_partno_safe(target)) {
+	switch (cortex_m_get_impl_part(target)) {
 	case CORTEX_M0P_PARTNO: /* APM32F0xx devices */
 		addr->device_id = 0x40015800;
 		addr->flash_size = 0x1FFFF7CC;
