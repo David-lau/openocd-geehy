@@ -85,6 +85,9 @@ static const struct flash_driver * const flash_drivers[] = {
 	&xmc4xxx_flash,
 	&w600_flash,
 	&rsl10_flash,
+	&apm32f003_flash,
+	&apm32f1x_flash,
+	&apm32f4x_flash,
 	NULL,
 };
 
